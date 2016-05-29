@@ -65,4 +65,10 @@ python spider.py --testself
 python spider.py -u www.sina.com.cn
 
 python spider.py -u www.sina.com.cn -d 2 --keyword 知道 -f spider.log -l 5 --dbfile spider.db --thread 10 
+
 ```
+
+##说明
+
+- 爬取 sina.com.cn 两级深度可以正常结束
+- 如不设置关键字，会将所有页面存入数据库并下载。
