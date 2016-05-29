@@ -5,6 +5,7 @@
 import sqlite3
 import logging
 import re
+import os
 import time
 import sys
 import requests
@@ -93,9 +94,18 @@ class Spider(object):
             except:
                 title = re.sub(rstr, "_", time.strftime(ISOTIMEFORMAT, time.localtime()))
 
+            # 显示 title
+            if title:
+                print title
+
             # 将数据存为文件
-            with open("%s.html" % title, "wb") as f:
-                f.write(returned_data)
+            if self.keyword:
+                if self.keyword in returned_data:
+                    with open("saved_files/%s.html" % title, "w") as f:
+                        f.write(returned_data)
+            else:
+                with open("saved_files/%s.html" % title, "w") as f:
+                        f.write(returned_data)
 
             # 将数据插入数据库
             if self.keyword:
@@ -215,6 +225,10 @@ if __name__ == '__main__':
     console = logging.StreamHandler()
     console.setLevel(logging.INFO)
     logging.getLogger('').addHandler(console)
+
+    #创建存放文件的文件夹
+    if not os.path.isdir("saved_files"):
+        os.mkdir("saved_files")
 
     # 运行爬虫
     spider = Spider(options)

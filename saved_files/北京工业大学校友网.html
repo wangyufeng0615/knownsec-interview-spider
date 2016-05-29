@@ -1,0 +1,1232 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if IE 9]><html class="ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zh-CN"> <!--<![endif]-->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1"/>
+	<title>北京工业大学校友网</title>
+	<!--[if lt IE 9]>
+	
+	<script src="/resources/js/html5.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	<![endif]-->
+	<!-- Common Includes -->
+	
+    
+        
+        
+        	<link rel="stylesheet" id="vce_responsive-css" href="/resources/css/font-awesome.min.css;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" type="text/css" media="screen,print"/>
+        
+        
+    
+        
+        
+        	<link rel="stylesheet" id="vce_responsive-css" href="/resources/css/style.css;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" type="text/css" media="screen,print"/>
+        
+        
+    
+        
+        
+        	<link rel="stylesheet" id="vce_responsive-css" href="/resources/css/custom.css;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" type="text/css" media="screen,print"/>
+        
+        
+    
+        
+        
+        	<link rel="stylesheet" id="vce_responsive-css" href="/resources/css/bootbox.css;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" type="text/css" media="screen,print"/>
+        
+        
+    
+        
+        
+        	<link rel="stylesheet" id="vce_responsive-css" href="/resources/css/toastr.css;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" type="text/css" media="screen,print"/>
+        
+        
+    
+        
+        
+        	<link rel="stylesheet" id="vce_responsive-css" href="/resources/js/jquery-ui/jquery-ui.css;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" type="text/css" media="screen,print"/>
+        
+        
+    
+        
+        
+        	<link rel="stylesheet" id="vce_responsive-css" href="/resources/js/jquery-ui/jquery-ui.theme.css;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" type="text/css" media="screen,print"/>
+        
+        
+    
+	
+	<link rel="shortcut icon" href="/resources/icons/favicon.ico;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" type="image/x-icon"/>
+</head>
+<body class="">
+	
+	<div id="vce-main">
+		<!-- 主内容 Header -->
+		
+
+
+
+
+
+
+ 
+
+
+<header id="header" class="main-header">
+	<div class="top-header">
+		<div class="container">
+			<div class="vce-wrap-left">
+				<a href="#">
+				<img class="round_logo" src="/resources/images/bjutaa_logo_round.png;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"/>
+				<img src="/resources/images/bjutaa_logo.png;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" title="北京工业大学校友网" alt="北京工业大学校友网" /></a>
+			</div>
+			<div class="vce-wrap-right">
+				
+				<form id="aluminheader" action="/searchfriends;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" method="post">
+					<input name="alumniname" class="vce-search-input" size="15" type="text" value="输入校友姓名"/>
+					<button type="submit" class="vce-search-submit"><i class="fa fa-search"></i></button>
+					<span class="social_group">
+						<a class="social" href="javascript: void(0);"><i class="fa fa-weixin"></i></a>
+						<img src="/resources/images/header_weixin_popup.png;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"/>
+					</span>
+					<span class="social_group">
+						<a class="social" href="javascript: void(0);"><i class="fa fa-weibo"></i></a>
+						<img src="/resources/images/header_weibo_popup.png;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"/>
+					</span>
+					
+						<a href="/login;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">登录</a>
+						<a class="register" href="/register;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">注册</a>
+					
+					
+				</form>
+				<!-- 修改密码弹窗 -->
+				<div id="dialog-changepwd" title="密码变更" style="display: none;">
+					
+					<form id="ajaxform-changepwd" action="/resetpassword;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" method="post">
+						<div class="form-group">
+							<label for="newpwd">新密码</label>
+							<input type="password" name="newpwd" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="confirmpwd">确认密码</label>
+							<input type="password" name="confirmpwd" class="form-control">
+						</div>
+						<input type="submit" name="dosave" value="保存"/>
+						<input type="button" class="cancel" name="cancel" value="返回"/>
+					<div>
+</div></form>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom-wrapper">
+		<div class="container">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<ul id="vce_main_navigation_menu" class="nav-menu">
+					
+						
+							
+							   
+							   
+							   		
+							   
+							
+							
+							<li class="menu-item"><a href="/home;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">首页</a></li>
+						
+     				
+						
+							
+							   
+									
+							   
+							   
+							
+							
+							<li class="menu-item"><a href="/publisher/20;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">新闻动态</a></li>
+						
+     				
+						
+							
+							   
+									
+							   
+							   
+							
+							
+							<li class="menu-item"><a href="/publisher/30;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">校友总会</a></li>
+						
+     				
+						
+							
+							   
+							   
+							   		
+							   
+							
+							
+							<li class="menu-item"><a href="/community;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">校友社区</a></li>
+						
+     				
+						
+							
+							   
+									
+							   
+							   
+							
+							
+							<li class="menu-item"><a href="/publisher/50;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">校友风采</a></li>
+						
+     				
+						
+							
+							   
+									
+							   
+							   
+							
+							
+							<li class="menu-item"><a href="/publisher/60;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">校友活动</a></li>
+						
+     				
+						
+							
+							   
+							   
+							   		
+							   
+							
+							
+							<li class="menu-item"><a href="/friends;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">校友录</a></li>
+						
+     				
+						
+							
+							   
+							   
+							   		
+							   
+							
+							
+							<li class="menu-item"><a href="/clazz;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">班级录</a></li>
+						
+     				
+						
+							
+							   
+									
+							   
+							   
+							
+							
+							<li class="menu-item"><a href="/publisher/90;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">校友企业</a></li>
+						
+     				
+						
+							
+							   
+									
+							   
+							   
+							
+							
+							<li class="menu-item"><a href="/publisher/100;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">校友服务</a></li>
+						
+     				
+						
+     				
+     				<!-- 
+					<li class="menu-item"><a href="#">首页</a></li>
+					<li class="menu-item"><a href="#">新闻动态</a></li>
+					<li class="menu-item"><a href="#">校友总会</a></li>
+					<li class="menu-item"><a href="#">校友社区</a></li>
+					<li class="menu-item"><a href="#">校友风采</a></li>
+					<li class="menu-item"><a href="#">校友活动</a></li>
+					<li class="menu-item"><a href="#">校友录</a></li>
+					<li class="menu-item"><a href="#">班级录</a></li>
+					<li class="menu-item"><a href="#">校友企业</a></li>
+					<li class="menu-item"><a href="#">校友刊物</a></li>
+					<li class="menu-item"><a href="#">校友服务</a></li>
+					--->
+					<li class="menu-item"><a href="/fund" target="_blank">教育基金会</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+
+		<div id="main-wrapper">
+			<!-- 主内容 Body -->
+			
+
+
+
+
+
+
+
+
+
+<!-- 更多  新闻聚焦、要闻动态 -->
+
+<!-- 更多  校友风采-->
+
+
+
+<!-- 更多  校友相册-->
+
+<!-- 更多  新加入校友-->
+
+<!-- 更多  热门班级-->
+
+
+<div class="fullslider-index">
+	<div class="content">
+		<h1>工大同窗</h1>
+		<h3>你，还好吗？</h3>
+		
+		<form action="/searchfriends;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" id="aluminbody" method="post">
+			<input class="slider-search-input" name="alumniname" value="输入校友姓名"/>
+			<button type="submit" class="vce-search-submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+</div>
+<div class="vce-featured-full-slider">
+	<div>
+		<a href="#"><img src="/resources/images/slide-5.jpg;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"/></a>
+	</div>
+	<div>
+		<a href="#"><img src="/resources/images/slide-7.jpg;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"/></a>
+	</div>
+	<div>
+		<a href="#"><img src="/resources/images/slide-6.jpg;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"/></a>
+	</div>
+	<div>
+		<a href="#"><img src="/resources/images/slide-4.jpg;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"/></a>
+	</div>
+	<div>
+		<a href="#"><img src="/resources/images/slide-3.jpg;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"/></a>
+	</div>
+</div>
+<div id="content" class="container site-content">
+	<div class="bit-2 index-left">
+		<div class="main-box vce-border-top " style="height: 571px;">
+			<h3 class="main-box-title"><i class="fa fa-newspaper-o"></i>新闻聚焦</h3>
+			<div class="main-box-inside ">
+				<div class="vce-loop-wrap">
+					
+						<article class="post type-post status-publish format-image has-post-thumbnail hentry vce-post vce-lay-b">
+							<div class="meta-image">
+								<img src="/upload/info/20160406/2af33677-6603-47ac-bd4c-ba1134a0595f.jpg" class="attachment-vce-lay-b wp-post-image" alt="">
+							</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=102" title="春到大华府 喜迎习主席">
+								
+									
+									      
+									      
+									     	春到大华府 喜迎习主席
+									     
+									
+								</a>
+								</h2>
+								<div class="entry-meta">
+									<div class="meta-item date"><i class="fa fa-calendar"></i> 2016-04-05</div>
+								</div>
+							</header>
+							<div class="entry-content">
+								<p>
+									
+									      
+									     	 
+
+春到大华府 喜迎习主席
+
+——北京工业大学在美校友欢迎习近平主席参加
+
+在华盛顿举行的“第四届核安全峰会”简讯
+
+ 
+
+ 
+
+春到大华府，习近平主席应美利坚合众国总统奥巴马先生邀请，于3月31日...
+									      
+									     
+									
+								</p>
+							</div>
+						</article>
+					
+						<article class="post type-post status-publish format-image has-post-thumbnail hentry vce-post vce-lay-b">
+							<div class="meta-image">
+								<img src="/upload/info/20160310/115a404e-9001-406d-8033-d2250b642d92.JPG" class="attachment-vce-lay-b wp-post-image" alt="">
+							</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=98" title="相约在美国华府, 共叙母校情">
+								
+									
+									      
+									      
+									     	相约在美国华府, 共叙母校情
+									     
+									
+								</a>
+								</h2>
+								<div class="entry-meta">
+									<div class="meta-item date"><i class="fa fa-calendar"></i> 2016-03-03</div>
+								</div>
+							</header>
+							<div class="entry-content">
+								<p>
+									
+									      
+									     	 
+
+相约在美国华府, 共叙母校情
+
+——记2016年北京工业大学交通行业海外校友分会联谊会
+
+ 
+
+2016年1月13日晚，TRB年会期间，北工大四十多名校友相聚华盛顿中国城(China Town)...
+									      
+									     
+									
+								</p>
+							</div>
+						</article>
+					
+				</div>
+				
+				<nav id="vce-pagination" class="vce-load-more"><a href="/news/list;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">查看更多</a></nav>
+			</div>
+		</div>
+	</div>
+	<div class="bit-2 index-right">
+		<div class="main-box vce-border-top " style="height: 571px;">
+			<h3 class="main-box-title"><i class="fa fa-bullhorn"></i>要闻动态</h3>
+			<div class="main-box-inside ">
+				<div class="vce-loop-wrap">
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category blue">通知公告</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=96" title="北京工业大学校友总会名列“2014年度第七批取得非营利组织免税资格单位名单”">
+								
+								
+									
+									      
+									     	北京工业大学校友总会名列“2014年度第七批取得...
+									      
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2016-02-26</span>
+						</article>
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category blue">通知公告</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=93" title="北工大首批校友卡正式启用">
+								
+								
+									
+									      
+									      
+									     	北工大首批校友卡正式启用
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2015-12-02</span>
+						</article>
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category blue">通知公告</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=85" title="企业家论坛">
+								
+								
+									
+									      
+									      
+									     	企业家论坛
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2015-10-30</span>
+						</article>
+					
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category red">工大要闻</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=101" title="校友月报——北工大要闻简讯2016年第2期" >
+								
+								
+									
+									      
+									      
+									     	校友月报——北工大要闻简讯2016年第2期
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2016-03-22</span>
+						</article>
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category red">工大要闻</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=97" title="校友月报——北工大要闻简讯2016年第1期" >
+								
+								
+									
+									      
+									      
+									     	校友月报——北工大要闻简讯2016年第1期
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2016-02-26</span>
+						</article>
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category red">工大要闻</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=95" title="聂祚仁教授个人捐赠五万元  设立“环境材料优秀学子”奖学金" >
+								
+								
+									
+									      
+									     	聂祚仁教授个人捐赠五万元  设立“环境材料优秀学...
+									      
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2015-12-23</span>
+						</article>
+					
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category green">校友动态</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=102" title="春到大华府 喜迎习主席">
+								
+								
+									
+									      
+									      
+									     	春到大华府 喜迎习主席
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2016-04-05</span>
+						</article>
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category green">校友动态</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=98" title="相约在美国华府, 共叙母校情">
+								
+								
+									
+									      
+									      
+									     	相约在美国华府, 共叙母校情
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2016-03-03</span>
+						</article>
+					
+						<article class="post type-post vce-post vce-lay-f">
+							<div class="category green">校友动态</div>
+							<header class="entry-header">
+								<h2 class="entry-title">
+								
+									
+										
+									
+									<a href="/news/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=94" title="彭永臻教授当选中国工程院院士">
+								
+								
+									
+									      
+									      
+									     	彭永臻教授当选中国工程院院士
+									     
+									
+								</a></h2>
+							</header>
+							<span class="date">2015-12-07</span>
+						</article>
+					
+				</div>
+				<nav id="vce-pagination" class="vce-load-more"><a href="/publisher/20">查看更多</a></nav>
+			</div>
+		</div>
+	</div>
+	<div class="main-box vce-border-top ">
+		<h3 class="main-box-title"><i class="fa fa-graduation-cap"></i>校友风采</h3>
+		<div class="main-box-inside ">
+			<div class="vce-loop-wrap">
+				
+					<article class="post type-post vce-post vce-lay-c ">
+						<div class="meta-image">
+							
+								
+							
+							<a href="/contents/50/51;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=94" title="彭永臻教授当选中国工程院院士">
+							<img width="375" height="195" src="/upload/info/20151207/633b40bf-4fc0-4262-b596-fd1fe0307d26.jpg" class="attachment-vce-lay-b wp-post-image"></a>
+						</div>
+						<header class="entry-header">
+							<!-- <span class="meta-category"><a href="#">行业精英</a></span> -->
+							<h2 class="entry-title"><a href="/contents/50/51;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=94" title="彭永臻教授当选中国工程院院士">彭永臻教授当选中国工程院院士</a></h2>
+							
+						</header>
+						<div class="entry-content">
+							<p>
+								
+									      
+									     	 
+
+       中国工程院于12月7日公布2015年院士增选结果，北京工业大学彭永臻教授增选为土......
+									      
+									     
+								
+							</p>
+						</div>
+					</article>
+				
+					<article class="post type-post vce-post vce-lay-c ">
+						<div class="meta-image">
+							
+								
+							
+							<a href="/contents/50/51;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=86" title="昨日师恩仍难忘 今朝翰墨犹飘香">
+							<img width="375" height="195" src="/upload/temp/5aa56dfc-7e63-4d21-a34b-e8a3724f3f5a.jpg" class="attachment-vce-lay-b wp-post-image"></a>
+						</div>
+						<header class="entry-header">
+							<!-- <span class="meta-category"><a href="#">行业精英</a></span> -->
+							<h2 class="entry-title"><a href="/contents/50/51;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=86" title="昨日师恩仍难忘 今朝翰墨犹飘香">昨日师恩仍难忘 今朝翰墨犹飘香</a></h2>
+							
+						</header>
+						<div class="entry-content">
+							<p>
+								
+									      
+									     	 
+
+昨日师恩仍难忘 今朝翰墨犹飘香
+
+         —— — 访我校校友、北京普锐斯玛电气技术......
+									      
+									     
+								
+							</p>
+						</div>
+					</article>
+				
+					<article class="post type-post vce-post vce-lay-c last">
+						<div class="meta-image">
+							
+								
+							
+							<a href="/contents/50/51;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=88" title="祝福母校">
+							<img width="375" height="195" src="/upload/info/20151111/dce9c0bc-7dde-4e87-893f-5cde39aec7ad.png" class="attachment-vce-lay-b wp-post-image"></a>
+						</div>
+						<header class="entry-header">
+							<!-- <span class="meta-category"><a href="#">行业精英</a></span> -->
+							<h2 class="entry-title"><a href="/contents/50/51;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=88" title="祝福母校">祝福母校</a></h2>
+							
+						</header>
+						<div class="entry-content">
+							<p>
+								
+									      
+									     	 
+
+章新友
+
+2014 届数理学院
+
+现任江西中医药大学研究生院院长
+
+
+
+ 
+
+        ......
+									      
+									     
+								
+							</p>
+						</div>
+					</article>
+				
+			</div>
+			<nav id="vce-pagination" class="vce-load-more"><a href="/contents/50/51">查看更多</a></nav>
+		</div>
+	</div>
+	<div class="main-box vce-border-top album-wrapper">
+		<h3 class="main-box-title"><i class="fa fa-photo"></i>校友相册</h3>
+		<div class="main-box-inside ">
+			<div class="vce-loop-wrap">
+				<div class="vce-album-slider">
+ 					
+						
+							<div class="album">
+								
+									
+								
+								<a href="/album;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?parentId=0">
+									<img src="/upload/album/20150604/f1b8c5a5-2c65-4f13-b2ad-12a54ee5866a-thumbnail.png" />
+								</a>
+								<p>北京工业大学江西校友分会成立</p>
+							</div>
+							
+					
+						
+							<div class="album">
+								
+									
+								
+								<a href="/album;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?parentId=0">
+									<img src="/upload/album/20150610/bd82e424-2bb8-4878-add6-afe285ea2d6b-thumbnail.png" />
+								</a>
+								<p>对外合作联络处走访贵州校友分会</p>
+							</div>
+							
+					
+						
+							<div class="album">
+								
+									
+								
+								<a href="/album;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?parentId=0">
+									<img src="/upload/album/20150610/9d9f4e89-d0a9-4031-8aea-2898e66718e9-thumbnail.png" />
+								</a>
+								<p>北京工业大学——朝阳区2015高新技术类特色招聘会</p>
+							</div>
+							
+					
+						
+							<div class="album">
+								
+									
+								
+								<a href="/album;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?parentId=0">
+									<img src="/upload/album/20150610/71e76706-2569-48a7-a511-e79b37526392-thumbnail.png" />
+								</a>
+								<p>北京工业大学香港校友返校 感受母校发展</p>
+							</div>
+							
+					
+						
+							<div class="album">
+								
+									
+								
+								<a href="/album;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?parentId=0">
+									<img src="/upload/album/20150603/515ad336-6f3a-400c-8362-61a61bcf371b-thumbnail.png" />
+								</a>
+								<p>2014毕业20年校友返校</p>
+							</div>
+							
+					 
+				</div>
+			</div>
+			<nav id="vce-pagination" class="vce-load-more"><a href="/album">查看更多</a></nav>
+			<!-- <div id="vce-pagination"><a class="album-prev" href="javascript: void(0);">上一张</a> <a class="album-next" href="javascript: void(0);">下一张</a></div> -->
+		</div>
+		<a class="album-pag album-prev" href="javascript: void(0);"><i class="fa fa-angle-left"></i></a>
+		<a class="album-pag album-next" href="javascript: void(0);"><i class="fa fa-angle-right"></i></a>
+	</div>
+	<div class="container index-row">
+		<div class="container-fix">
+			<div class="bit-3">
+				<div class="main-box vce-border-top" style="height: 420px;">
+					<h3 class="main-box-title"><i class="fa fa-bicycle"></i>热门活动</h3>
+					<div class="main-box-inside">
+						<div class="vce-loop-wrap">
+							
+								<article class="post type-post vce-post vce-lay-z list">
+									<div class="category blue">0</div>
+									<header class="entry-header">
+										<h2 class="entry-title"><a href="#" title="企业家论坛">企业家论坛</a></h2>
+									</header>
+								</article>
+							
+								<article class="post type-post vce-post vce-lay-z list">
+									<div class="category blue">0</div>
+									<header class="entry-header">
+										<h2 class="entry-title"><a href="#" title="知名校友论坛">知名校友论坛</a></h2>
+									</header>
+								</article>
+							
+								<article class="post type-post vce-post vce-lay-z list">
+									<div class="category blue">0</div>
+									<header class="entry-header">
+										<h2 class="entry-title"><a href="#" title="企业家论坛">企业家论坛</a></h2>
+									</header>
+								</article>
+							
+						</div>
+						
+						<nav id="vce-pagination" class="vce-load-more"><a href="/active/list;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">查看更多</a></nav>
+					</div>
+				</div>
+			</div>
+			<div class="bit-3">
+				<div class="main-box vce-border-top" style="height: 420px;">
+					<h3 class="main-box-title"><i class="fa fa-institution"></i>热门分会</h3>
+					<div class="main-box-inside">
+						<table class="index-table">
+							<thead>
+								<tr>
+									<th class="header">分会名称</th><th>会员</th><th>活动</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/48/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">美国华盛顿DC校友分会</a></td><td>0</td><td>0</td>
+								</tr>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/49/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">香港校友分会</a></td><td>0</td><td>0</td>
+								</tr>
+								
+							</tbody>
+						</table>
+						<nav id="vce-pagination" class="vce-load-more"><a href="/community">查看更多</a></nav>
+					</div>
+				</div>
+			</div>
+			<div class="bit-3">
+				<div class="main-box vce-border-top" style="height: 420px;">
+					<h3 class="main-box-title"><i class="fa fa-heart"></i>热门兴趣圈</h3>
+					<div class="main-box-inside">
+						<table class="index-table">
+							<thead>
+								<tr>
+									<th class="header">兴趣圈</th><th>圈友</th><th>活动</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+
+							</tbody>
+						</table>
+						<nav id="vce-pagination" class="vce-load-more"><a href="/community">查看更多</a></nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container index-row second">
+		<div class="container-fix">
+			<div class="bit-3">
+				<div class="main-box vce-border-top activitynote">
+					<h3 class="main-box-title"><i class="fa fa-calendar"></i>活动通知</h3>
+					<div class="main-box-inside">
+						<div class="vce-loop-wrap">
+							
+								<article class="post type-post vce-post vce-lay-f">
+									<div class="category blue">04月12日</div>
+									<header class="entry-header">
+										
+											
+										
+										<h2 class="entry-title"><a href="/active/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=10" title="知名校友论坛">知名校友论坛</a></h2>
+									</header>
+								</article>
+							
+								<article class="post type-post vce-post vce-lay-f">
+									<div class="category blue">11月24日</div>
+									<header class="entry-header">
+										
+											
+										
+										<h2 class="entry-title"><a href="/active/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=9" title="企业家论坛">企业家论坛</a></h2>
+									</header>
+								</article>
+							
+								<article class="post type-post vce-post vce-lay-f">
+									<div class="category blue">11月06日</div>
+									<header class="entry-header">
+										
+											
+										
+										<h2 class="entry-title"><a href="/active/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?info=7" title="企业家论坛">企业家论坛</a></h2>
+									</header>
+								</article>
+							
+						</div>
+						
+						<nav id="vce-pagination" class="vce-load-more"><a href="/active/list;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">查看更多</a></nav>
+					</div>
+				</div>
+			</div>
+			<div class="bit-3">
+				<div class="main-box vce-border-top activitynote">
+					<h3 class="main-box-title"><i class="fa fa-user"></i>新加入校友</h3>
+					<div class="main-box-inside">
+						<div class="vce-loop-wrap">
+							
+								<article class="post vce-post vce-lay-d">
+									<div class="meta-image">
+										<a href="#" title="">
+											
+											
+											<img width="80" height="80" src="/resources/images/avatar/default.png" class="attachment-vce-lay-d wp-post-image">
+											
+										</a>
+									</div>
+									<header class="entry-header">
+										
+											
+											
+											
+										
+										<h2 class="entry-title"><a href="/friends/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?rid=110&amp;hid=&amp;name=%E5%88%98%E6%AF%85">刘毅</a></h2>
+										
+										<span class="meta-category"><a href="/community/4/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" class="category-1">建筑工程学院</a></span>
+										<div class="entry-meta">1999届</div>
+									</header>
+								</article>
+							
+								<article class="post vce-post vce-lay-d">
+									<div class="meta-image">
+										<a href="#" title="">
+											
+											
+											<img width="80" height="80" src="/resources/images/avatar/default.png" class="attachment-vce-lay-d wp-post-image">
+											
+										</a>
+									</div>
+									<header class="entry-header">
+										
+											
+											
+											
+										
+										<h2 class="entry-title"><a href="/friends/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?rid=105&amp;hid=&amp;name=%E7%8E%8B%E6%B5%B7%E6%B6%9B">王海涛</a></h2>
+										
+										<span class="meta-category"><a href="/community/4/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" class="category-1">建筑工程学院</a></span>
+										<div class="entry-meta">1999届</div>
+									</header>
+								</article>
+							
+								<article class="post vce-post vce-lay-d">
+									<div class="meta-image">
+										<a href="#" title="">
+											
+											
+											<img width="80" height="80" src="/resources/images/avatar/default.png" class="attachment-vce-lay-d wp-post-image">
+											
+										</a>
+									</div>
+									<header class="entry-header">
+										
+											
+											
+											
+										
+										<h2 class="entry-title"><a href="/friends/detail;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456?rid=136&amp;hid=&amp;name=%E6%9D%8E%E5%85%B4">李兴</a></h2>
+										
+										<span class="meta-category"><a href="/community/9/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456" class="category-1">经济与管理学院</a></span>
+										<div class="entry-meta">2001届</div>
+									</header>
+								</article>
+							
+						</div>
+						<nav id="vce-pagination" class="vce-load-more"><a href="/friends">查看更多</a></nav>
+					</div>
+				</div>
+			</div>
+			<div class="bit-3">
+				<div class="main-box vce-border-top">
+					<h3 class="main-box-title"><i class="fa fa-users"></i>热门班级</h3>
+					<div class="main-box-inside">
+						<table class="index-table" style="margin-bottom: 30px;">
+							<thead>
+								<tr>
+									<th class="header">班号</th><th>人数</th><th>活动</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/1423/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">011141</a></td><td>2</td><td>0</td>
+								</tr>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/1469/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">990421</a></td><td>2</td><td>0</td>
+								</tr>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/1473/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">990461</a></td><td>2</td><td>0</td>
+								</tr>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/1416/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">010903</a></td><td>2</td><td>0</td>
+								</tr>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/1500/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">990903</a></td><td>2</td><td>0</td>
+								</tr>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/1724/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">975442</a></td><td>2</td><td>0</td>
+								</tr>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/1394/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">010461</a></td><td>2</td><td>0</td>
+								</tr>
+								
+								<tr>
+									
+									<td class="header"><a href="/community/1284/1;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456">020112</a></td><td>2</td><td>0</td>
+								</tr>
+								
+							</tbody>
+						</table>
+						<nav id="vce-pagination" class="vce-load-more"><a href="/clazz">查看更多</a></nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+			<!-- 主内容 Footer -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="footer" class="site-footer">
+	<div class="container">
+		<div class="container-fix">
+		
+		
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+<footer id="footer" class="site-footer">
+	
+	<div class="container-full site-info">
+		<div class="container">
+			<div class="vce-wrap-left">
+				<p>北京工业大学校友网 © 2015</p>
+			</div>
+			<div class="vce-wrap-right">
+				<p><span>版权所有</span> 北京工业大学校友总会 <span>校址</span> 北京市朝阳区平乐园100号 <span>京公网安备</span> 110402430086号 <span>电话</span> 010-67391821</p>
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+	</div>
+	<a href="javascript:void(0)" id="back-top"><i class="fa fa-angle-up"></i></a>
+	<div id="show_managermenu">
+		<a href="#" title="展开管理面板"><i class="fa fa-bars"></i></a>
+	</div>
+	
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/jquery/jquery-1.11.3.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/owl.carousel.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/jquery.matchHeight.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/bootstrap.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/bootbox.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/plugin/toastr/toastr.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/jquery-ui/jquery-ui.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/jquery.form.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/jquery.validate.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/additional-methods.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/localization/messages_zh.min.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/custom.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	    
+	    
+	    
+	    	<script type="text/javascript" src="/resources/js/page/custom.index.js;JSESSIONID=020dd88a-b8c0-45b9-b26c-8334426ec456"></script>
+	    
+	
+	<script type="text/javascript">
+		if($("#aluminheader").length >0){
+			$("#aluminheader").submit(function( event ) {
+				if ($("input[name='alumniname']").val() == "" ) {
+					event.preventDefault();
+				}
+			});
+		}
+	</script>
+</body>
+</html>

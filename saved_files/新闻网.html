@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<title>新闻网</title>
+<link rel="stylesheet" type="text/css" href="images/style.css" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="images/imageflow.packed.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="${Prefix}template/js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/imageflow.packed.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.tabs.js"></script>
+<script type="text/javascript" src="js/jcarousellite.js"></script>
+<style>
+.carousel{ position:relative;}
+.carousel .prev , .carousel .next { z-index:9999;}
+.xx_notice dd ul li {background:none}
+.xx_notice dd p{padding:10px 0 10px 0px}
+</style>
+<script type="text/javascript">
+$(function(){
+	$('.demo4').Tabs({
+		auto:5000
+	});
+});	
+$(function(){
+	$('.demo3').Tabs({
+		auto:5000
+	});
+});	
+</script>
+<script type="text/javascript">
+	$(window).load(function() {
+		$('.flexslider').flexslider();
+	});
+</script>
+<script type="text/javascript">
+$(function(){
+	$("#jCarouselLite").jCarouselLite({
+		btnNext: "#next",
+        btnPrev: "#prev",
+		visible:1,
+		scroll:1,
+		onMouse:true,
+		auto:4000,
+		speed:1000
+	});
+});
+</script>
+</head>
+
+<body>
+<!-- 页头开始 -->
+<div class="header">
+  <!--div class="logo"> <img src="${Prefix}images/logo.png" alt="" width="354" height="102" /> </div--><div class="logo" title="大学文化"><a href="http://news.bjut.edu.cn/" target="_blank"></a></div>
+ <form name="form1" method="get" action="http://www.bjut.edu.cn/xww/search/resultcode" target="_blank">
+  <div class="search">
+    <textarea id="_query" style="display:none"></textarea>
+	<input type="hidden" name="SiteID" value="2"/>
+	   <table> 
+	    <tr>
+    	 <td>
+		 	<div style="position:relative;"><input type="text" name="Query" value="Search |" suggest="true" suggestsource="Search.suggest" class="ser" onclick="soClick(this)" onblur="soBlur(this)" />
+			<input type="submit" class="searchbtn" value="&nbsp;" /></div></td>
+		 <td><a href="http://www.bjut.edu.cn/xww/search/resultcode?SiteID=2" target="_blank" class="highBt"><!--input type="button" value="高级搜索" class="highBt" /--></a></td>
+		</tr>
+		<tr>
+		 <td align="right" colspan="2"><a href="http://www.bjut.edu.cn/" target="_blank" class="l_highBt"><!--旧版新闻网入口/--></a></td>
+		</tr>
+	   </table>	
+  </div>
+ </form>
+  <div class="clear"></div>
+  <div class="menu"> <a class="indexlink" href="http://news.bjut.edu.cn/" target="_blank"><span>网站首页<br/>Index</span></a>
+  <a href="gdyw/" target="_blank"><span>工大要闻<br/>Headlines</span></a> 
+  <a href="rxxy/" target="_blank"><span>日新校园<br/><div>BJUT Today</div></span></a>
+  <a href="rwjj/" target="_blank"><span>人物聚焦<br/>Up-Close</span></a>
+  <a href="tpxw/" target="_blank"><span>图片新闻<br/><div>Photos Gallery</div></span></a> 
+  <a href="ztxw/" target="_blank"><span>专题热点<br/><div>Special Coverage</div></span></a> 
+  <a href="mtgd/" target="_blank"><span>媒体工大<br/><div style="width:77px;">BJUT in Media</div></span></a>
+  <a href="yygd/sp/" target="_blank"><span>影音在线<br/><div>Video News</div></span></a> 
+  <a href="xbzl/" target="_blank"><span>校报纵览<br/><div style="width:70px">The Newspaper</div></span></a>
+  <a href="gjsy/" target="_blank"><span>高教视野<br/><div>Higher Education</div></span></a>
+  <a href="dxwh/sp/" target="_blank"><span>大学文化<br/><div>University Culture</div></span></a>
+  </div>
+</div>
+<style>
+.menu a{height:42px;overflow:hidden;}
+.menu a span{clear:both;display:block;}
+</style>
+<script>
+$(".menu a").hover(
+	function(){$(this).find("span").stop().animate({marginTop:-42},"fast")},
+	function(){$(this).find("span").stop().animate({marginTop:0},"fast")}
+);
+</script>
+<script  type="text/javascript">
+ //搜索框提示
+function soClick(obj){
+	if(obj.value=="Search |") obj.value =""; 
+}
+function soBlur(obj){
+	if(obj.value=="") obj.value ="Search |"; 
+}
+
+function topSearch(){
+ window.location.href="http://www.bjut.edu.cn/xww/topSearch/search?SiteID=2";
+}
+
+</script>
+
+<div class="main">
+ 
+  <div id="banner">
+    <div class="flexslider">
+      <ul class="slides">
+	   
+	    
+	     <li><a href="ttxw/20483.shtml" target="_blank"><img src="upload/ttxw/1464219100656_627x388.jpg" border="0" alt="北京工业大学第八届教职工代表大会暨第十三届工会会员代表大会第二次会议开幕" /></a></li>
+		
+	     <li><a href="ttxw/20465.shtml" target="_blank"><img src="upload/ttxw/1463989624478_627x388.jpg" border="0" alt="享一场异国文化的盛宴——北工大第十一届国际日举行" /></a></li>
+		
+	     <li><a href="http://lxyz.bjut.edu.cn/" target="_blank"><img src="upload/ttxw/1463986425449_627x388.jpg" border="0" alt="北京工业大学“两学一做”专题网站" /></a></li>
+		
+	   
+      </ul>
+    </div>
+  </div>
+  <div class="banner_ul">
+    <ul>
+	 
+	  
+	   <li>
+	    <h3><a href="ttxw/20483.shtml" target="_blank" title="北京工业大学第八届教职工代表大会暨第十三届工会会员代表大会第二次会议开幕">北京工业大学第八届教职工代表大会...</a></h3>
+        <p><a href="ttxw/20483.shtml" target="_blank" title="北京工业大学第八届教职工代表大会暨第十三届工会会员代表大会第二次会议开幕"> 5月25日，北京工业大学第八届教职工代表大会暨第十三届工会会员代表大会第二次会议在校礼堂开幕。校长柳贡慧，副校长蒋毅坚、聂祚仁、吴斌、刘建萍以...【查看详细】</a> </p>
+	   </li>
+	  
+	   <li>
+	    <h3><a href="ttxw/20465.shtml" target="_blank" title="享一场异国文化的盛宴——北工大第十一届国际日举行">享一场异国文化的盛宴——北工大第...</a></h3>
+        <p><a href="ttxw/20465.shtml" target="_blank" title="享一场异国文化的盛宴——北工大第十一届国际日举行"> 5月20日中午，逸夫北广场成为了一道靓丽的风景线。来自世界各地共41个国家的留学生齐聚与此，在充满热情与欢乐的气氛中，北工大第十一届国际日活动举...【查看详细】</a> </p>
+	   </li>
+	  
+	   <li>
+	    <h3><a href="http://lxyz.bjut.edu.cn/" target="_blank" title="北京工业大学“两学一做”专题网站">北京工业大学“两学一做”专题网站</a></h3>
+        <p><a href="http://lxyz.bjut.edu.cn/" target="_blank" title="北京工业大学“两学一做”专题网站"> 为配合学校“两学一做”学习教育的全面开展，做好“两学一做”学习教育的宣传工作，北京工业大学“两学一做”专题网站正式上线。【查看详细】</a> </p>
+	   </li>
+	  
+	 
+	<div class="more"><a href="ttxw/" target="_blank">more</a></div>
+    </ul>
+  </div>
+
+  <dl class="school">
+    <dt>
+      
+	 	<div class="more"><a href="rxxy/" target="_blank">more</a></div>
+	    <h3>日新校园</h3>
+	  
+    </dt>
+    <dd>
+      <ul class="su">
+	   
+	    
+		  <li><a href="rxxy/20492.shtml" title="北工大女篮在2016年首都高校大学生Star杯篮球联赛中获佳绩" target="_blank">北工大女篮在2016年首都高校大学生St...</a></li>
+		
+		  <li><a href="rxxy/20485.shtml" title="北工大承办北京市辩论黄金联赛并取得优异成绩" target="_blank">北工大承办北京市辩论黄金联赛并取得优异成绩</a></li>
+		
+		  <li><a href="rxxy/20477.shtml" title="都柏林学院召开&quot;BJUT与UCD学生学业成绩评价体系衔接&quot;研讨会" target="_blank">都柏林学院召开&quot;BJUT与UC...</a></li>
+		
+		  <li><a href="rxxy/20470.shtml" title="北工大老同志喜获北京高校老同志健身项目展示活动“阳光风采奖”" target="_blank">北工大老同志喜获北京高校老同志健身项目展...</a></li>
+		
+		  <li><a href="rxxy/20448.shtml" title="第十期青年教师教学能力培训进入试讲实践环节 专家点评助青年教师站好讲台" target="_blank">第十期青年教师教学能力培训进入试讲实践环...</a></li>
+		
+		  <li><a href="rxxy/20446.shtml" title="第九届“工大杯”激情五月篮球赛举行 研究生院代表队蝉联冠军" target="_blank">第九届“工大杯”激情五月篮球赛举行 研究...</a></li>
+		
+		  <li><a href="rxxy/20442.shtml" title="应用数理学院组织青年教师与教学名师面对面话成长" target="_blank">应用数理学院组织青年教师与教学名师面对面...</a></li>
+		
+		  <li><a href="rxxy/20437.shtml" title="北工大举行微季风花样悦跑活动" target="_blank">北工大举行微季风花样悦跑活动</a></li>
+		
+		  <li><a href="rxxy/20417.shtml" title="北工大8名博士后获得中国博士后科学基金资助" target="_blank">北工大8名博士后获得中国博士后科学基金资助</a></li>
+		
+	   
+	  </ul>
+    </dd>
+  </dl>
+  <dl class="news">
+    <dt>
+		<div class="more"><a href="gdyw/" target="_blank">more</a></div>
+      <h3>工大要闻</h3>      
+	 
+    </dt>
+    <dd>
+      <ul>
+	   
+	    
+		 <li><a href="gdyw/20493.shtml" title="北京工业大学第八届教职工代表大会暨第十三届工会会员代表大会第二次会议闭幕" target="_blank">北京工业大学第八届教职工代表大会暨第十三...</a></li>
+		
+		 <li><a href="gdyw/20491.shtml" title="创无止境，业达天下——北工大举办创新创业宣传周" target="_blank">创无止境，业达天下——北工大举办创新创业...</a></li>
+		
+		 <li><a href="gdyw/20490.shtml" title="北工大举办2016年节能宣传周启动暨节能作品颁奖仪式" target="_blank">北工大举办2016年节能宣传周启动暨节能...</a></li>
+		
+		 <li><a href="gdyw/20489.shtml" title="图书馆举行“读书与人生”微访谈 2016图书馆月闭幕" target="_blank">图书馆举行“读书与人生”微访谈 2016...</a></li>
+		
+		 <li><a href="gdyw/20487.shtml" title="两代会“议”起来" target="_blank">两代会“议”起来</a></li>
+		
+		 <li><a href="gdyw/20486.shtml" title="【2016毕业季：变与不变】感谢四年大学时光" target="_blank">【2016毕业季：变与不变】感谢四年大学时光</a></li>
+		
+		 <li><a href="gdyw/20482.shtml" title="北京工业大学第八届教职工代表大会暨第十三届工会会员代表大会第二次会议开幕" target="_blank">北京工业大学第八届教职工代表大会暨第十三...</a></li>
+		
+		 <li><a href="gdyw/20481.shtml" title="【卓越工程师炼成记】把实践教学课堂延伸到企业 ——计算机学院信息安全专业“卓越工程师”班人才培养侧记" target="_blank">【卓越工程师炼成记】把实践教学课堂延伸到...</a></li>
+		
+		 <li><a href="gdyw/20475.shtml" title="北工大师生学习贯彻习近平总书记在哲学社会科学工作座谈会上的重要讲话精神" target="_blank">北工大师生学习贯彻习近平总书记在哲学社会...</a></li>
+		
+	   
+      </ul>
+    </dd>
+  </dl>
+  <dl class="xx xx_notice" style="background: url(images/bg5.png) no-repeat #E5E5E5;">
+    <dt>
+	 
+	  <div class="more"><a href="xxyg/" target="_blank">more</a></div>
+      <h3>信息预告</h3>
+     
+	</dt>
+    <dd>
+      <div class="carousel" style="height: 240px">
+            <a href="javascript:void(0);" class="prev" id="prev">prev</a>
+            <div class="jCarouselLite" id="jCarouselLite">
+                <ul>
+                 
+                   
+				    <li style="height: 225px">
+                    	<h3><a href="xxyg/20389.shtml" target="_blank">关于开展北京工业大学2016年优秀大学生创新创业团队大赛的通知</a></h3>
+                        <span>2016/05/03</span>
+                        <p>
+                        	《参赛申报表》提交截止时间为5月5日；《创业计划书》提交截止时间为5月19日
+                            <a href="xxyg/20389.shtml" target="_blank">[详细]</a>
+                        </p>
+                    </li>
+				   
+				    <li style="height: 225px">
+                    	<h3><a href="xxyg/20338.shtml" target="_blank">“相约图书馆”2016图书馆月活动</a></h3>
+                        <span>2016/04/21</span>
+                        <p>
+                        	精彩活动欢迎大家到场参与。
+                            <a href="xxyg/20338.shtml" target="_blank">[详细]</a>
+                        </p>
+                    </li>
+				   
+                  
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="next" id="next">next</a>
+            <div class="clear"></div>   
+        </div>
+    </dd>
+  </dl>
+  <div class="clear"></div>
+  <dl class="schoola tabschool demo4">
+    <dt class="tab_menu">
+      <span class="hover">媒体工大 </span>
+      <span>高教视野</span>
+    </dt>
+    <dd class="tab_box">
+		<div>
+		  <div class="tabmore more"><a href="mtgd/" target="_blank">more</a></div>
+		  <ul>
+		   
+			
+			<li><a href="mtgd/20488.shtml" title="光明教育：手机做教具 北工大教师玩转思政课堂" target="_blank">光明教育：手机做教具 北工大教师玩转思政...</a></li>
+			
+			<li><a href="mtgd/20454.shtml" title="现代教育报：北工大校园开放日 “双培计划”受热捧" target="_blank">现代教育报：北工大校园开放日 “双培计划...</a></li>
+			
+			<li><a href="mtgd/20459.shtml" title="人民网：北京工业大学：“十大举措”护航人才培养" target="_blank">人民网：北京工业大学：“十大举措”护航人...</a></li>
+			
+			<li><a href="mtgd/20484.shtml" title="北京考试报：北工大举办校园开放日:双培计划受关注 创新成果显魅力" target="_blank">北京考试报：北工大举办校园开放日:双培计...</a></li>
+			
+			<li><a href="mtgd/20457.shtml" title="人民网：尤琦：“汽车迷”打造太阳能空调" target="_blank">人民网：尤琦：“汽车迷”打造太阳能空调</a></li>
+			
+			<li><a href="mtgd/20434.shtml" title="中国教育报：仅靠学术逻辑难建一流大学" target="_blank">中国教育报：仅靠学术逻辑难建一流大学</a></li>
+			
+			<li><a href="mtgd/20423.shtml" title="北京晨报：25所首都高校角逐机械创新大赛" target="_blank">北京晨报：25所首都高校角逐机械创新大赛</a></li>
+			
+			<li><a href="mtgd/20424.shtml" title="中国电力网：全球能源互联网研究院与北工大共建可信计算北京市重点实验室申请正式获批" target="_blank">中国电力网：全球能源互联网研究院与北工大...</a></li>
+			
+			<li><a href="mtgd/20422.shtml" title="中国科学报：首都高校第八届机械创新设计大赛在北工大举行" target="_blank">中国科学报：首都高校第八届机械创新设计大...</a></li>
+			
+		   
+		  </ul>
+		</div>
+	  <div class="hide">
+	  		<div class="tabmore more"><a href="gjsy/" target="_blank">more</a></div>
+			<ul>
+			
+			
+			<li><a href="gjsy/20474.shtml" title="跨学科教育：一流本科的必然选择" target="_blank">跨学科教育：一流本科的必然选择</a></li>
+			
+			<li><a href="gjsy/20405.shtml" title="大学是时候研制个性化招生方案了" target="_blank">大学是时候研制个性化招生方案了</a></li>
+			
+			<li><a href="gjsy/20274.shtml" title="中国教育新期许：更高质量更加公平" target="_blank">中国教育新期许：更高质量更加公平</a></li>
+			
+			<li><a href="gjsy/20233.shtml" title="构建创新创业教育体系迫在眉睫" target="_blank">构建创新创业教育体系迫在眉睫</a></li>
+			
+			<li><a href="gjsy/20182.shtml" title="改革碰硬，教育活力更强劲" target="_blank">改革碰硬，教育活力更强劲</a></li>
+			
+			<li><a href="gjsy/20126.shtml" title="“一带一路”对人才培养的新要求" target="_blank">“一带一路”对人才培养的新要求</a></li>
+			
+			<li><a href="gjsy/20037.shtml" title="高等教育协同发展：京津冀一体化的重要推动力" target="_blank">高等教育协同发展：京津冀一体化的重要推动力</a></li>
+			
+			<li><a href="gjsy/19964.shtml" title="教育舍弃人文理念 难说素质" target="_blank">教育舍弃人文理念 难说素质</a></li>
+			
+			<li><a href="gjsy/19845.shtml" title="75%的受访在校大学生对创业满怀期待" target="_blank">75%的受访在校大学生对创业满怀期待</a></li>
+			
+		   
+		  </ul>
+	  </div>
+    
+    </dd>
+  </dl>
+  <dl class="people tabschool demo3">
+    <dt class="tab_menu">
+      <span class="hover">人物聚焦</span>
+      <span>专题热点</span>
+    </dt>
+    <dd class="tab_box">
+	 <div>
+	  <div class="tabmore more"><a href="rwjj/" target="_blank">more</a></div>
+      <ul>
+	   
+	    
+		 <li><a href="rwjj/20418.shtml" title="师如冬阳，旖旎天光——访环能学院周颖老师" target="_blank">师如冬阳，旖旎天光——访环能学院周颖老师</a></li>
+		
+		 <li><a href="rwjj/20319.shtml" title="为学生架起理论学习和实践能力的桥梁——访经管学院教师杨娟" target="_blank">为学生架起理论学习和实践能力的桥梁——访经...</a></li>
+		
+		 <li><a href="rwjj/20186.shtml" title="晨雨润桃李 时至花自开——访人文学院教师李晨宇" target="_blank">晨雨润桃李 时至花自开——访人文学院教师李...</a></li>
+		
+		 <li><a href="rwjj/20125.shtml" title="微积分世界中的辛勤耕耘者——访数理学院教师范周田" target="_blank">微积分世界中的辛勤耕耘者——访数理学院教师...</a></li>
+		
+		 <li><a href="rwjj/20051.shtml" title="做良师，也是益友——访数理学院教师赵旭" target="_blank">做良师，也是益友——访数理学院教师赵旭</a></li>
+		
+		 <li><a href="rwjj/19954.shtml" title="轮势随天度，桥形跨海通——访中国著名桥梁专家退休教师高征铨教授" target="_blank">轮势随天度，桥形跨海通——访中国著名桥梁专...</a></li>
+		
+		 <li><a href="rwjj/19858.shtml" title="贤师师贤——访机电学院退休教师白师贤" target="_blank">贤师师贤——访机电学院退休教师白师贤</a></li>
+		
+		 <li><a href="rwjj/19759.shtml" title="以人为本 从心出发——访研究生院教师王立勇" target="_blank">以人为本 从心出发——访研究生院教师王立勇</a></li>
+		
+		 <li><a href="rwjj/19582.shtml" title="从大山中走出的90后阳光男孩 ——访北京工业大学学生、首都高校十大励志人物候选人王远阳" target="_blank">从大山中走出的90后阳光男孩 ——访北京工...</a></li>
+		
+	   
+      </ul>
+	 </div>
+	 <div class="hide">
+	  <div class="tabmore more"><a href="ztxw/" target="_blank">more</a></div>
+      <ul>
+	   
+	    
+		 <li><a href="http://lxyz.bjut.edu.cn/" title="&quot;两学一做“专题网站" target="_blank">&quot;两学一做“专题网站</a></li>
+		
+		 <li><a href="ztxw/20461.shtml" title="2016毕业季：变与不变" target="_blank">2016毕业季：变与不变</a></li>
+		
+		 <li><a href="ztxw/20279.shtml" title="那些年我们一起追过的课程" target="_blank">那些年我们一起追过的课程</a></li>
+		
+		 <li><a href="ztxw/20184.shtml" title="走进实验室" target="_blank">走进实验室</a></li>
+		
+		 <li><a href="http://ksls.bjut.edu.cn/" title="口述历史" target="_blank">口述历史</a></li>
+		
+		 <li><a href="ztxw/19626.shtml" title="我与工大" target="_blank">我与工大</a></li>
+		
+		 <li><a href="http://www.bjut.edu.cn/xqsy/" title="建校55周年专题网站" target="_blank">建校55周年专题网站</a></li>
+		
+		 <li><a href="ztxw/19309.shtml" title="榜样的力量" target="_blank">榜样的力量</a></li>
+		
+		 <li><a href="ztxw/19169.shtml" title="2015毕业季：青春·我们" target="_blank">2015毕业季：青春·我们</a></li>
+		
+	   
+      </ul>
+	 </div-->
+    </dd>
+  </dl>
+  <dl class="xx">
+    <dt>
+      
+	   <div class="more"><a href="yygd/sp/" target="_blank">more</a></div>
+	    <h3>影音在线</h3>
+	  
+    </dt>
+    <dd>
+	 
+	  
+	   <object id="_zvideoplayer" width="233" height="160" style="vertical-align:middle;">
+<param name="movie" value="images/player.swf">
+<param name="wmode" value="transparent">
+<param name="allowfullscreen" value="true">
+<param name="allowscriptaccess" value="always">
+<param name="AllowNetworking" value="all">
+<param name="flashvars" value="file=../upload/yygd/sp/6005.flv&image=upload/yygd/sp/1463038119530.jpg?1464458412789&title=&plugins=images/plugin4zcms.swf&&stretching=fill"><embed type="application/x-shockwave-flash" width="233" height="160" wmode="transparent" flashvars="file=../upload/yygd/sp/6005.flv&image=upload/yygd/sp/1463038119530.jpg?1464458412789&title=&plugins=images/plugin4zcms.swf&&stretching=fill" src="images/player.swf" quality="high" allowfullscreen="true"></embed>
+</object>
+
+	  
+	 
+      <ul>
+	   
+	    
+	     <li><a href="yygd/sp/221.shtml" target="_blank">2016年科学精神与学术规范...</a></li>
+		
+	     <li><a href="yygd/sp/220.shtml" target="_blank">2016年科学精神与学术规范...</a></li>
+		
+	   
+      </ul>
+    </dd>
+  </dl>
+  <div class=" clear"></div>
+ <div class="conBd">
+  <dl class="img">
+  <dd>
+	 
+      
+	   <p><a href="tpxw/189.shtml" target="_blank"><img src="upload/tpxw/1463292629549.jpg" width="298" height="255" alt="不惟学，亦有之——2016北工大校园开放日" /></a> <span><a href="tpxw/189.shtml" target="_blank">不惟学，亦有之——2016北工大校园开放日</a></span> </p>
+	  
+	 
+	 <strong>
+	  
+       
+	    <a href="tpxw/187.shtml" target="_blank"><img src="upload/tpxw/1461310247250.jpg" width="155" height="127" alt="北京工业大学第42届运动会" /></a>
+	   
+	    <a href="tpxw/185.shtml" target="_blank"><img src="upload/tpxw/1461029914075.jpg" width="155" height="127" alt="北工大首届“寻找玛格南”摄影大赛优秀作品赏析" /></a>
+	   
+	  
+	 </strong>
+	 
+      
+	   <p><a href="tpxw/183.shtml" target="_blank"><img src="upload/tpxw/1459298985730.jpg" width="298" height="255" alt="春风十里，不如北工大这里" /></a> <span><a href="tpxw/183.shtml" target="_blank">春风十里，不如北工大这里</a></span> </p>
+	  
+	 
+	
+    </dd>
+  </dl>
+  <dl class="xiao">
+   <dd>
+      <div class="imagex">
+        
+        	 <a href="xbzl/" target="_blank"><img alt="校报纵览" width="180" height="255" src="upload/xbzl/1463706897574_190x213.jpg" /></a>
+        
+    </div>   
+    </dd>
+  </dl>
+  <div class=" clear"></div>
+  </div>
+  
+</div><div class="footer">
+  <div class="copy">
+    <p>版权所有 北京工业大学新闻中心 </p>
+    <p>投稿信箱：gdxwzx@bjut.edu.cn</p>
+  </div>
+  <div class="nav">
+    <p>
+     
+  		
+  			<a href="http://news.bjut.edu.cn/ljwz/8479.shtml" target="_blank">网站介绍</a>&nbsp;&nbsp;
+     	
+  			<a href="http://news.bjut.edu.cn/ljwz/8482.shtml" target="_blank">学生记者团</a>&nbsp;&nbsp;
+     	
+  			<a href="http://news.bjut.edu.cn/ljwz/8474.shtml" target="_blank">投稿须知</a>&nbsp;&nbsp;
+     	
+  			<a href="http://weibo.com/u/5053641135" target="_blank">新浪官方微博</a>&nbsp;&nbsp;
+     	
+  			<a href="http://news.bjut.edu.cn/gdyw/9285.shtml" target="_blank">官方微信</a>&nbsp;&nbsp;
+     	
+	 
+	</p>
+    <p>新闻热线：67392762</p>
+  </div>
+</div>
+<script src="http://www.bjut.edu.cn/xww//stat/front/stat.js" type="text/javascript"></script>
+<script>
+if(window._zcms_stat)_zcms_stat("SiteID=2&Dest=http://www.bjut.edu.cn/xww//stat");
+</script>
+<!-- App=cms_bgd(cms_bgd) 2.1.10983,CostTime=817,PublishDate=2016-05-29 02:00:12 --></body>
+</html>

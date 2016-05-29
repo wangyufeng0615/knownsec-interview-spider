@@ -64,5 +64,5 @@ python spider.py --testself
 
 python spider.py -u www.sina.com.cn
 
-python spider.py -u www.sina.com.cn -d 2 --keyword 知道 -f spider.log -l 5 -d spider.db --thread 10 
+python spider.py -u www.sina.com.cn -d 2 --keyword 知道 -f spider.log -l 5 --dbfile spider.db --thread 10 
 ```
